@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.body{
+    background-color: rgb(40, 42, 47);
+}
+.page-container{
+    background-color: rgb(40, 42, 47);
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.text-box{
+    text-align: center;
+    color: white;
+}
+
+.game-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#whitePieces, #blackPieces {
+    height: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#whitePieces svg, #blackPieces svg{
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+} 
+
+.board-container-container{
+    display: flex;
+    justify-content: center;
+}
+.board-container{
+    height: 500px;
+    width: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 62.5px;
+    height: 62.5px;   
+    position: relative;
+}
+.piece{
+    position: relative;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.piece:hover{
+    transform: scale(1.2);
+}
+
+svg{
+    position: relative;
+    z-index: -9;
+
+}
+
+
+
+.white{
+    background-color: antiquewhite;
+}
+
+.black{
+    background-color: gray;
+}
+
+.whiteP {
+    fill: rgb(196, 196, 196);
+}
+
+.highlight {
+    background-color: rgb(218, 218, 81);
+    opacity: 40%;
+}
+
+.modal{
+    background-color: rgb(6, 1, 28);
+
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.modal.open{
+    opacity: 0.9;
+}
+
+.promotion-box{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(73, 73, 73);
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+}
+
+.promotion-box svg{
+    width: 70px;
+    height: 70px;
+}
+
+.win-screen{
+    background-color: rgb(6, 1, 28);
+
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.win-screen.open{
+    opacity: 0.9;
+}
+
+.win-screen-content{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(73, 73, 73);
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 5px;
+
+}
+
+button{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(50, 50, 50);
+}
